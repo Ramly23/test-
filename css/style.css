@@ -425,11 +425,10 @@ header {
     color: var(--first-color);
   }
 
-  .title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  .flex-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .title h1 {
@@ -437,7 +436,7 @@ header {
     box-shadow: unset;
     text-align: center;
     font-weight: var(--font-bold);
-    font-size: 45px;
+    font-size: 30px;
     padding: 2.5rem 2rem 1rem 2rem;
   }
 
@@ -498,6 +497,10 @@ header {
   /* Header */
   .title {
     width: 70%;
+  }
+
+  .title h1 {
+    font-size: 40px;
   }
 
   .title p {
