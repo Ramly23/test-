@@ -299,7 +299,7 @@ header {
   width: 100%;
   border: 2px solid var(--title-color);
   box-shadow: 0 0 15px 0 var(--title-color);
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .intro__first h2 {
@@ -316,6 +316,10 @@ header {
   font-size: 13px;
   text-align: center;
   line-height: 1.7;
+}
+
+.text {
+  row-gap: 1rem;
 }
 
 /* About */

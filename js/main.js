@@ -131,7 +131,7 @@ const sr = ScrollReveal({
     delay: 400,
 })
 
-sr.reveal(`.nav__logo` , {origin: 'left'})
-sr.reveal(`.nav__item` , {interval: 100})
+sr.reveal(`.nav__logo , .text` , {origin: 'left'})
+sr.reveal(`.nav__menu` , {interval: 100})
 sr.reveal(`.nav__btns` , {origin: 'right'})
 sr.reveal(`.media` , {origin: 'right'})
