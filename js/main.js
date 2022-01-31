@@ -138,6 +138,11 @@ sr.reveal(`.media` , {origin: 'right'})
 
 /* =========== Multiple Scroll =========== */
 
+/* Home */
+document.querySelector('.home').addEventListener('click', () => {
+    document.documentElement.scrollTop = 0;
+})
+
 /* Intro */
 document.querySelector('.intro').addEventListener('click', () => {
     window.scrollTo(0, 650);
