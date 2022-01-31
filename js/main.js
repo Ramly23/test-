@@ -135,3 +135,10 @@ sr.reveal(`.nav__logo , .text` , {origin: 'left'})
 sr.reveal(`.nav__menu` , {interval: 100})
 sr.reveal(`.nav__btns` , {origin: 'right'})
 sr.reveal(`.media` , {origin: 'right'})
+
+/* =========== Multiple Scroll =========== */
+
+/* Intro */
+document.querySelector('.intro').addEventListener('click', () => {
+    window.scrollTo(0, 650);
+})
