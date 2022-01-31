@@ -281,6 +281,10 @@ header {
 }
 
 /* Intro */
+.main {
+  overflow: hidden;
+}
+
 .intro__container {
   padding: 7rem 2rem;
 }
