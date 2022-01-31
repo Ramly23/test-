@@ -61,6 +61,7 @@ html {
 body {
   background-color: var(--body-color);
   transition: .4s;
+  overflow-x: hidden;
 }
 
 button {
