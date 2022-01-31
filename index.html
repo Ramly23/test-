@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.ico">
+
+  <!-- Link Css -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!--=============== REMIX ICONS ===============-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/21bf2f8b90.js" crossorigin="anonymous"></script>
+
+  <!-- Title -->
+  <title>Disaster Lua & JS</title>
+
+</head>
+<body>
+  
+  <!-- Header --> <!-- Finished -->
+  <header id = 'header'>
+    <nav id = 'home' class = 'header'>
+      <!-- Flex Two Columns -->
+      <div class="header__container  container nav-flex">
+
+        <!-- First Column -->
+        <div class="nav__logo">
+          <h1>Disaster JS <i class="fas fa-user-secret"></i></h1>
+        </div>
+
+        <!-- Navigation Menu -->
+        <div class="nav__menu" id = 'nav-menu'>
+
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link"  id = 'remove__active'>Home</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#intro" class="nav__link">Intro</a>
+            </li>
+
+            <li class="nav__item">
+                <a href="#about" class="nav__link">About</a>
+            </li>
+
+            <li class="nav__item">
+                <a href="#screenshots" class="nav__link">Screenshots</a>
+            </li>
+
+            <li class="nav__item">
+                <a href="#faqs" class="nav__link">FAQs</a>
+            </li>
+
+            <div class="buttons hide-for-desktop">
+              <button data-section="#neverlose" class="is-active">Neverlose</button>
+              <button data-section="#onetap">Onetap</button>
+            </div>
+
+          </ul>
+
+          <!-- Close Menu Icon -->
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+
+        </div>
+
+        <!-- Theme change button -->
+        <div class="nav__btns">
+          <i class = "ri-moon-line change-theme" id = "theme-button" ></i>
+
+          <div class="nav__toggle" id="nav-toggle">
+              <i class = "ri-menu-line"></i>
+          </div>
+
+        </div>
+
+      </div>           
+    </nav>
+
+    <!-- Title -->
+    <div class="container">
+      <div class="title">
+        <h1>Welcome To The Future Disaster JS</h1>
+        <p class="hide-for-mobile">Unique JS and Luas providing huge functionality and easy to use, 
+          with a fast and friendly support team.
+        </p>
+
+        <div class="buttons buttons-flex hide-for-mobile">
+          <button data-section="#neverlose" class="is-active">Neverlose</button>
+          <button data-section="#onetap">Onetap</button>
+        </div>
+
+      </div>
+    </div>
+  
+  </header>
+
+  <!-- Main Content -->
+  <main class = 'main'>
+
+    <!-- ========== Neverlose Part ============ -->
+    <div id ="neverlose" class = 'main__section is-active'>
+      <!-- Intro -->
+      <section id="intro">
+
+        <!-- Flex Two Columns For Big Devices -->
+        <div class="intro__container container grid">
+
+          <!-- First Column -->
+          <div class="intro__first grid">
+            <img class = 'hide-for-desktop media' src="images/media1.jpg" alt="media1">
+
+            <!-- Text -->
+            <h2>The Future Of Disaster Lua</h2>
+            <p>Founded in 2020, Disaster Lua can definitely enchance of your gaming experience. This Lua is very different from others and it have a lot of new features inside this Neverlose Lua. 
+              Make sure to check it out , or else u will regret. </p>
+          </div>
+
+          <!-- Second Column -->
+          <div class="intro__second hide-for-mobile">
+            <img class = 'media' src="images/media1.jpg" alt="media1">
+          </div>
+
+        </div>
+      </section>
+
+    <!-- About -->
+
+    <!-- Screenshots -->
+
+    <!-- FAQs -->
+
+    </div>
+
+    <!-- ========== Onetap Part ============ -->
+    <div id ="onetap" class = 'main__section'>
+      <!-- Intro -->
+      <section id="intro">
+
+        <!-- Flex Two Columns For Big Devices -->
+        <div class="intro__container container grid">
+
+          <!-- First Column -->
+          <div class="intro__first grid">
+            <img class = 'hide-for-desktop' src="images/media1.jpg" alt="media1">
+
+            <!-- Text -->
+            <h2>The Future Of Disaster JS</h2>
+            <p>Founded in 2020, Disaster JS can definitely enchance of your gaming experience. This Javascript is very different from others and it have a lot of new features inside this Onetap Javascript. 
+              Make sure to check it out , or else u will regret. </p>
+          </div>
+
+          <!-- Second Column -->
+          <div class="intro__second hide-for-mobile">
+            <img src="images/media2.jpg" alt="media1">
+          </div>
+
+        </div>
+      </section>
+
+      <!-- About -->
+
+      <!-- Screenshots -->
+
+      <!-- FAQs -->
+    </div>
+
+  </main>
+  
+  <!--=============== SCROLL REVEAL ===============-->
+  <script src="js/scrollreveal.min.js"></script>
+
+  <!-- Main Script -->
+  <script src = "js/main.js"></script>
+
+
+</body>
+</html>
