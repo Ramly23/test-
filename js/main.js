@@ -143,7 +143,9 @@ document.querySelector('.home').addEventListener('click', () => {
     document.documentElement.scrollTop = 0;
 })
 
-/* Intro */
-document.querySelector('.intro').addEventListener('click', () => {
-    window.scrollTo(0, 650);
+/* Intro  */
+const intro = document.querySelector('.intro');
+
+intro.addEventListener('click', () => {
+    window.scrollTo(0, 650)
 })
