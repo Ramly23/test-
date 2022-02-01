@@ -328,7 +328,7 @@ header {
   position: relative;
 }
 
-.about__first img , .about__second img , .about__third img , .about__fourth img {
+.about__first img , .about__second img , .about__third img , .about__fourth img , .about__fifth img , .about__sixth img , .about__seven img {
   width: 100%;
 }
 
@@ -367,17 +367,43 @@ header {
   outline: none;
 }
 
- .about__second{
-  row-gap: 2rem;
+.about__first .rage__text {
+  margin-bottom: 10rem;
 }
 
-.about__first .rage__text .outer{
-  position: relative;
-  bottom: 25px;
+.about__second .rage__text {
+  margin-bottom: 7rem;
+}
+
+.about__third .rage__text {
+  margin-top: 3rem;
+}
+
+.about__third .rage__text .outer {
+  margin-top: 2rem;
+}
+
+.about__fourth .rage__text {
+  margin-top: 3rem;
+}
+
+.about__fourth .rage__text .outer {
+  margin-top: 2rem;
+}
+
+.about__fifth .rage__text {
+  margin-bottom: 13rem;
+}
+
+.about__sixth .rage__text {
+  margin-bottom: 2rem;
+}
+
+.about__seven .rage__text {
+  margin-bottom: 15rem;
 }
 
 .rage__text {
-  row-gap: 1.5rem;
   animation: fadeIn 0.6s both;
   animation-delay: 2s;
 }
@@ -397,7 +423,6 @@ header {
 
 .outer {
   display: flex;
-  align-items: center;
   justify-content: center;
   margin-bottom: 1rem;
   padding: 0 .5rem;
@@ -494,14 +519,6 @@ header {
 
   .rage__text p {
     font-size: 14px;
-  }
-
-  .about__first {
-    row-gap: 2rem;
-  }
-
-  .about__first .rage__text .outer{
-    bottom: 0px;
   }
   
 
@@ -603,10 +620,19 @@ header {
   }
 
   /* About */
-  .about__first , .about__second {
+  .about__first , .about__second , .about__third , .about__fourth , .about__fifth , .about__sixth , .about__seven{
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
     align-items: center;
+  }
+
+  .outer {
+    display: unset;
+    padding: 0 1rem 0 0;
+  }
+
+  .rage__text {
+    row-gap: 2rem;
   }
 
   .rage__text h3 {
@@ -615,11 +641,6 @@ header {
 
   .rage__text p {
     font-size: 13px;
-  }
-
-  .outer {
-    display: unset;
-    padding: 0;
   }
 
   .about__title {
@@ -641,6 +662,38 @@ header {
     width: 100%;
     height: 2px;
     background-color: var(--title-color);
+  }
+
+  .about__first .rage__text {
+    margin-bottom: 0rem;
+  }
+  
+  .about__second .rage__text {
+    margin-bottom: 0rem;
+  }
+  
+  .about__third .rage__text {
+    margin-top: 0rem;
+  }
+  
+  .about__third .rage__text .outer {
+    margin-top: 0rem;
+  }
+  
+  .about__fourth .rage__text {
+    margin-top: 0rem;
+  }
+  
+  .about__fourth .rage__text .outer {
+    margin-top: 0rem;
+  }
+  
+  .about__fifth .rage__text {
+    margin-bottom: 0rem;
+  }
+  
+  .about__seven .rage__text {
+    margin-bottom: 0rem;
   }
 
   /* Screenshots */
