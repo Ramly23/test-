@@ -131,7 +131,7 @@ const sr = ScrollReveal({
     delay: 400,
 })
 
-sr.reveal(`.nav__logo , .text` , {origin: 'left'})
+sr.reveal(`.nav__logo , .text , .rage` , {origin: 'left'})
 sr.reveal(`.nav__menu` , {interval: 100})
 sr.reveal(`.nav__btns` , {origin: 'right'})
 sr.reveal(`.media` , {origin: 'right'})
@@ -149,3 +149,19 @@ const intro = document.querySelector('.intro');
 intro.addEventListener('click', () => {
     window.scrollTo(0, 650)
 })
+
+/*==================== SWIPER  ====================*/
+let swiperPortfolio = new Swiper('.about__container', {
+    cssMode: true,
+    loop: true,
+  
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });

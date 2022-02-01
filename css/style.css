@@ -254,7 +254,6 @@ header {
   background-color: var(--first-color);
 }
 
-
 .nav__logo , .nav__btns {
   color: white;
 }
@@ -324,7 +323,87 @@ header {
 }
 
 /* About */
+.about__container {
+  padding: 0 2rem 5rem;
+  position: relative;
+}
 
+.about__first img {
+  width: 100%;
+}
+
+.swiper-button-prev::after, .swiper-button-next::after {
+  content: '';
+}
+
+.swiper-portfolio-icon {
+  font-size: 2rem;
+  color: var(--first-color);
+  position: relative;
+  bottom: 30px;
+}
+
+.swiper-button-prev {
+  left: .1rem;
+}
+
+.swiper-button-next {
+  right: .1rem;
+}
+
+.swiper-pagination-bullets {
+  bottom: 20px;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: -2.5rem;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--first-color);
+}
+
+.swiper-button-prev, .swiper-button-next, .swiper-pagination-bullet {
+  outline: none;
+}
+
+.about__first {
+  row-gap: 2rem;
+}
+
+.rage__text {
+  row-gap: 1.5rem;
+  animation: fadeIn 0.6s both;
+  animation-delay: 2s;
+}
+
+.rage__text h3 {
+  font-family: var(--Josefin);
+  text-transform: uppercase;
+  color: var(--title-color);
+  text-align: center;
+}
+
+.rage__text p {
+  font-family: var(--Poppins);
+  font-size: 13px;
+  color: var(--text-color);
+}
+
+.outer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.inner {
+  box-shadow: 0 0 15px 0 var(--title-color);
+  padding: 1rem 2rem;
+  border-radius: .25rem;
+  border: 2px solid var(--title-color);
+  row-gap: .75rem;
+}
 
 /* Screenshots */
 
@@ -386,7 +465,18 @@ header {
 
 
   /* About */
+  .inner {
+    padding: 2rem 3rem;
+  }
 
+  .rage__text h3 {
+    font-size: 22px;
+  }
+
+  .rage__text p {
+    font-size: 14px;
+  }
+  
 
   /* Screenshots */
 
@@ -472,6 +562,7 @@ header {
   .intro__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+    column-gap: 2rem;
   }
 
   .intro__first h2 {
@@ -485,7 +576,23 @@ header {
   }
 
   /* About */
+  .about__first {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    align-items: center;
+  }
 
+  .rage__text h3 {
+    text-align: initial;
+  }
+
+  .rage__text p {
+    font-size: 13px;
+  }
+
+  .outer {
+    display: unset;
+  }
 
   /* Screenshots */
 
@@ -523,7 +630,9 @@ header {
   }
 
   /* About */
-
+  .about__container {
+    padding: 4rem 2rem 5rem;
+  }
 
   /* Screenshots */
 
@@ -558,7 +667,9 @@ header {
   }
 
   /* About */
-
+  .rage__text p {
+    font-size: 14px;
+  }
 
   /* Screenshots */
 
