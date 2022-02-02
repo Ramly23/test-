@@ -1,426 +1,392 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.ico">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.ico" />
 
-  <!--=============== SWIPER CSS ===============--> 
-  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
 
-  <!-- Link Css -->
-  <link rel="stylesheet" href="css/style.css">
+    <!-- Link Css -->
+    <link rel="stylesheet" href="css/style.css" />
 
-  <!--=============== REMIX ICONS ===============-->
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!--=============== REMIX ICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
 
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/21bf2f8b90.js" crossorigin="anonymous"></script>
-
-  <!-- Title -->
-  <title>Disaster Lua & JS</title>
-
-</head>
-<body>
-  
-  <!-- Header --> <!-- Finished -->
-  <header id = 'header'>
-    <nav id = 'home' class = 'header'>
-      <!-- Flex Two Columns -->
-      <div class="header__container  container nav-flex">
-
-        <!-- First Column -->
-        <div class="nav__logo">
-          <h1>Disaster <i class="fas fa-user-secret"></i></h1>
-        </div>
-
-        <!-- Navigation Menu -->
-        <div class="nav__menu" id = 'nav-menu'>
-
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#home" class="nav__link active-link home"  id = 'remove__active'>Home</a>
-            </li>
-
-            <li class="nav__item">
-              <a href="#intro" class="nav__link intro">Intro</a>
-            </li>
-
-            <li class="nav__item">
-                <a href="#about" class="nav__link">About</a>
-            </li>
-
-            <li class="nav__item">
-                <a href="#screenshots" class="nav__link">Screenshots</a>
-            </li>
-
-            <li class="nav__item">
-                <a href="#faqs" class="nav__link">FAQs</a>
-            </li>
-
-            <div class="buttons hide-for-desktop">
-              <button data-section="#neverlose" class="is-active">Neverlose</button>
-              <button data-section="#onetap">Onetap</button>
-            </div>
-
-          </ul>
-
-          <!-- Close Menu Icon -->
-          <div class="nav__close" id="nav-close">
-            <i class="ri-close-line"></i>
-          </div>
-
-        </div>
-
-        <!-- Theme change button -->
-        <div class="nav__btns">
-          <i class = "ri-moon-line change-theme" id = "theme-button" ></i>
-
-          <div class="nav__toggle" id="nav-toggle">
-              <i class = "ri-menu-line"></i>
-          </div>
-
-        </div>
-
-      </div>           
-    </nav>
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/21bf2f8b90.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Title -->
-    <div class="container flex-title">
-      <div class="title">
-        <h1>Welcome To The Future Disaster</h1>
-        <p class="hide-for-mobile">Unique JS and Luas providing huge functionality and easy to use, 
-          with a fast and friendly support team.
-        </p>
-
-        <div class="buttons buttons-flex hide-for-mobile">
-          <button data-section="#neverlose" class="is-active">Neverlose</button>
-          <button data-section="#onetap">Onetap</button>
-        </div>
-
-      </div>
-    </div>
-  
-  </header>
-
-  <!-- Main Content -->
-  <main class = 'main'>
-
-    <!-- ========== Neverlose Part ============ -->
-    <div id ="neverlose" class = 'main__section is-active'>
-      <!-- Intro -->
-      <section id="intro">
-
-        <!-- Flex Two Columns For Big Devices -->
-        <div class="intro__container container grid">
-
+    <title>Disaster Lua & JS</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <!-- Finished -->
+    <header id="header">
+      <nav id="home" class="header">
+        <!-- Flex Two Columns -->
+        <div class="header__container container nav-flex">
           <!-- First Column -->
-          <div class="intro__first">
-            <img class = 'hide-for-desktop media' src="images/media1.jpg" alt="media1">
+          <div class="nav__logo">
+            <h1>Disaster <i class="fas fa-user-secret"></i></h1>
+          </div>
 
-            <!-- Text -->
-            <div class="text grid">
-              <h2>The Future Of Disaster Lua</h2>
-              <p>Founded in 2020, Disaster Lua can definitely enchance of your gaming experience. This Lua is very different from others and it have a lot of new features inside this Neverlose Lua. 
-                Make sure to check it out , or else u will regret. </p>
+          <!-- Navigation Menu -->
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a
+                  href="#home"
+                  class="nav__link active-link home"
+                  id="remove__active"
+                  >Home</a
+                >
+              </li>
+
+              <li class="nav__item">
+                <a href="#intro" class="nav__link intro">Intro</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="#about" class="nav__link">About</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="#screenshots" class="nav__link">Screenshots</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="#faqs" class="nav__link">FAQs</a>
+              </li>
+
+              <div class="buttons hide-for-desktop">
+                <button data-section="#neverlose" class="is-active">
+                  Neverlose
+                </button>
+                <button data-section="#onetap">Onetap</button>
+              </div>
+            </ul>
+
+            <!-- Close Menu Icon -->
+            <div class="nav__close" id="nav-close">
+              <i class="ri-close-line"></i>
             </div>
-            
           </div>
 
-          <!-- Second Column -->
-          <div class="intro__second hide-for-mobile">
-            <img class = 'media' src="images/media1.jpg" alt="media1">
-          </div>
+          <!-- Theme change button -->
+          <div class="nav__btns">
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
 
+            <div class="nav__toggle" id="nav-toggle">
+              <i class="ri-menu-line"></i>
+            </div>
+          </div>
         </div>
-      </section>
+      </nav>
 
-    <!-- About -->
-    <section id="about">
+      <!-- Title -->
+      <div class="container flex-title">
+        <div class="title">
+          <h1>Welcome To The Future Disaster</h1>
+          <p class="hide-for-mobile">
+            Unique JS and Luas providing huge functionality and easy to use,
+            with a fast and friendly support team.
+          </p>
 
-      <!-- Flex Four Columns For Big Devices -->
-      <div class="about__container container grid swiper-container">
-
-        <div class="about__title">
-          <h1>About The Lua</h1>
+          <div class="buttons buttons-flex hide-for-mobile">
+            <button data-section="#neverlose" class="is-active">
+              Neverlose
+            </button>
+            <button data-section="#onetap">Onetap</button>
+          </div>
         </div>
-
-        <div class="swiper-wrapper">
-
-          <!-- First Column (Rage) -->
-          <div class="about__first grid swiper-slide">
-            <img class = 'rage' src="images/first.png" alt="images">
-
-            <div class="rage__text grid">
-              <h3>Rage (Neverlose) </h3>
-
-              <div class="outer">
-                <div class="inner grid">
-
-                  <p>- DT Mode
-                    (Normal, Fast, Disaster)
-                  </p>
-                  <p>- Clock Correction</p>
-                  <p>- Force Teleport</p>
-                  <p>- Ideal Tick</p>
-                  <p>- Jump Scout Fix</p>
-                </div>
-          
-              </div>
-          
-            </div>
-
-          </div>
-
-          <!-- Second Column (Rage (Weapon Configuration))  -->
-          <div class="about__second grid swiper-slide">
-            <img src="images/second.png" alt="second">
-
-            <div class="rage__text grid">
-              <h3>Weapon Configuration (Neverlose)</h3>
-
-              <div class="outer">
-                <div class="inner grid">
-                  <p>- Hitboxes priority <br>(Set to different hitboxes)
-                  </p>
-                  <p>- Prefer head <br> ( In-air, Standing, Walking, Running, Crouching, Lethal, Shot)</p>
-                  <p>- Prefer body <br> ( In-air, Standing, Walking, Running, Crouching, Lethal )</p>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <!-- Third Column (Anti-AIm) -->
-          <div class="about__third grid swiper-slide">
-            <img src="images/three.png" alt="three.png">
-
-            <div class="rage__text grid">
-              <h3>Anti-Aim (Neverlose)</h3>
-
-              <div class="outer">
-                <div class="inner grid">
-                  <p>- AA Modes (4 Presets )
-                  </p>
-                  <p>- Custom ( Standing, Slowwalk, Walking, Running, In-air, Crouching, On-E)</p>
-                <p>- Safe Head</p>
-                <p>- Mega Lean</p>
-                <p>- Pitch 0 on Land</p>
-                <p>- Leg Fucker</p>
-                <p>- AA Details ( Print details of anti aim in console )</p>
-                <p>- Builder ( Override yaw, lby, limit )</p>
-                <p>- Fakelag ( 1 Mode )</p>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-
-          <!-- Fourth Column (Misc)  -->
-          <div class="about__fourth grid swiper-slide">
-            <img src="images/fourth.png" alt="fourth">
-
-            <div class="rage__text grid">
-              <h3>Custom AA</h3>
-
-              <div class="outer">
-                <div class="inner grid">
-                  <p>- AA Condition</p>
-                  <p>- Pitch</p>
-                  <p>- Yaw Base</p>
-                  <p>- Yaw Add</p>
-                  <p>- Yaw Modifier</p>
-                  <p>- Inverter</p>
-                  <p>- Left Limit</p>
-                  <p>- Right Limit</p>
-                  <p>- Fake Options</p>
-                  <p>- LBY Mode</p>
-                  <p>- Freestanding Desync</p>
-                  <p>- Desync On Shot</p>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-
-          <!-- Fourth Column (Misc)  -->
-          <div class="about__fifth grid swiper-slide">
-            <img src="images/fifth.png" alt="fourth">
-            
-
-            <div class="rage__text grid">
-              <h3>Visuals</h3>
-
-              <div class="outer">
-                <div class="inner grid">
-                  <p>- Indicator near crosshair</p>
-                  <p>- Keybind</p>
-                  <p>- Custom scope</p>
-                  <p>- Fullbright</p>
-                </div>
-              </div>
-              
-            </div>
-
-          </div>
-
-          <div class="about__sixth grid swiper-slide">
-            <img src="images/sixth.png" alt="fourth">
-
-
-            <div class="rage__text grid">
-              <h3>Log</h3>
-
-              <div class="outer">
-                <div class="inner grid">
-                  <p>- Target</p>
-                  <p>- Hitbox</p>
-                  <p>- damage</p>
-                  <p>- remaining hp</p>
-                  <p>- Hitchance</p>
-                  <p>- Backtrack</p>
-                  <p>- Scoped</p>
-                  <p>- Miss reason</p>
-                  <p>- Spread degree</p>
-                  <p>- Print in console with color</p>
-                </div>
-              </div>
-              
-            </div>
-
-
-          </div>
-
-          <div class="about__seven grid swiper-slide">
-            <img src="images/seven.png" alt="fourth">
-
-
-            <div class="rage__text grid">
-              <h3>Player List</h3>
-
-              <div class="outer">
-                <div class="inner grid">
-                  <p>- Steal name</p>
-                  <p>- Custom name</p>
-                  <p>- Steal clantag</p>
-                </div>
-              </div>
-              
-            </div>
-
-          </div>
-
-        </div>
-
-        <div class="swiper-button-next">
-          <i class = "fas fa-angle-right swiper-portfolio-icon"></i>
-        </div>
-        
-        <div class="swiper-button-prev">
-            <i class = "fas fa-angle-left swiper-portfolio-icon"></i>
-        </div>
-
-        <div class="swiper-pagination"></div>
-
       </div>
-    </section>
+    </header>
 
-    <!-- Screenshots -->
+    <!-- Main Content -->
+    <main class="main">
+      <!-- ========== Neverlose Part ============ -->
+      <div id="neverlose" class="main__section is-active">
+        <!-- Intro -->
+        <section id="intro">
+          <!-- Flex Two Columns For Big Devices -->
+          <div class="intro__container container grid">
+            <!-- First Column -->
+            <div class="intro__first">
+              <img
+                class="hide-for-desktop media"
+                src="images/media1.jpg"
+                alt="media1"
+              />
 
-    <!-- FAQs -->
-
-    </div>
-
-    <!-- ========== Onetap Part ============ -->
-    <div id ="onetap" class = 'main__section'>
-      <!-- Intro -->
-      <section id="intro">
-
-        <!-- Flex Two Columns For Big Devices -->
-        <div class="intro__container container grid">
-
-          <!-- First Column -->
-          <div class="intro__first grid">
-            <img class = 'hide-for-desktop' src="images/media2.jpg" alt="media2">
-
-            <!-- Text -->
-            <h2>The Future Of Disaster JS</h2>
-            <p>Founded in 2020, Disaster JS can definitely enchance of your gaming experience. This Javascript is very different from others and it have a lot of new features inside this Onetap Javascript. 
-              Make sure to check it out , or else u will regret. </p>
-          </div>
-
-          <!-- Second Column -->
-          <div class="intro__second hide-for-mobile">
-            <img src="images/media2.jpg" alt="media2">
-          </div>
-
-        </div>
-      </section>
-
-      <!-- About -->
-      <section id="about">
-
-        <!-- Flex Four Columns For Big Devices -->
-        <div class="about__container container grid swiper-container">
-
-          <div class="swiper-wrapper">
-
-            <!-- First Column (Rage) -->
-            <div class="about__first grid swiper-slide">
-
+              <!-- Text -->
+              <div class="text grid">
+                <h2>The Future Of Disaster Lua</h2>
+                <p>
+                  Founded in 2020, Disaster Lua can definitely enchance of your
+                  gaming experience. This Lua is very different from others and
+                  it have a lot of new features inside this Neverlose Lua. Make
+                  sure to check it out , or else u will regret.
+                </p>
+              </div>
             </div>
 
-            <!-- Second Column (Anti-aim) -->
-            <div class="about__second swiper-slide">
+            <!-- Second Column -->
+            <div class="intro__second hide-for-mobile">
+              <img class="media" src="images/media1.jpg" alt="media1" />
+            </div>
+          </div>
+        </section>
 
+        <!-- About -->
+        <section id="about">
+          <!-- Flex Four Columns For Big Devices -->
+          <div class="about__container container grid swiper-container">
+            <div class="about__title">
+              <h1>About The Lua</h1>
             </div>
 
-            <!-- Third Column (Visuals) -->
-            <div class="about__third swiper-slide">
+            <div class="swiper-wrapper">
+              <!-- First Column (Rage) -->
+              <div class="swiper-slide">
+                <div class="about__first grid">
+                  <img class="rage" src="images/first.png" alt="images" />
 
+                  <!-- Text -->
+                  <div class="rage__text">
+                    <h3>Rage (Neverlose)</h3>
+
+                    <p>- DT Mode (Normal, Fast, Disaster)</p>
+                    <p>- Clock Correction</p>
+                    <p>- Force Teleport</p>
+                    <p>- Ideal Tick</p>
+                    <p>- Jump Scout Fix</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Second Column (Rage (Weapon Configuration))  -->
+              <div class="swiper-slide">
+                <div class="about__second grid">
+                  <img src="images/second.png" alt="second" />
+
+                  <div class="rage__text">
+                    <h3>Weapon Configuration (Neverlose)</h3>
+
+                    <p>- Hitboxes priority <br />(Set to different hitboxes)</p>
+                    <p>
+                      - Prefer head <br />
+                      ( In-air, Standing, Walking, Running, Crouching, Lethal,
+                      Shot)
+                    </p>
+                    <p>
+                      - Prefer body <br />
+                      ( In-air, Standing, Walking, Running, Crouching, Lethal )
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Third Column (Anti-AIm) -->
+              <div class="swiper-slide">
+                <div class="about__third grid">
+                  <img src="images/three.png" alt="three.png" />
+
+                  <div class="rage__text">
+                    <h3>Anti-Aim (Neverlose)</h3>
+                    <p>- AA Modes (4 Presets )</p>
+                    <p>
+                      - Custom ( Standing, Slowwalk, Walking, Running, In-air,
+                      Crouching, On-E)
+                    </p>
+                    <p>- Safe Head</p>
+                    <p>- Mega Lean</p>
+                    <p>- Pitch 0 on Land</p>
+                    <p>- Leg Fucker</p>
+                    <p>- AA Details ( Print details of anti aim in console )</p>
+                    <p>- Builder ( Override yaw, lby, limit )</p>
+                    <p>- Fakelag ( 1 Mode )</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Fourth Column (Misc)  -->
+              <div class="swiper-slide">
+                <div class="about__fourth grid">
+                  <img src="images/fourth.png" alt="fourth" />
+
+                  <div class="rage__text">
+                    <h3>Custom AA</h3>
+
+                    <p>- AA Condition</p>
+                    <p>- Pitch</p>
+                    <p>- Yaw Base</p>
+                    <p>- Yaw Add</p>
+                    <p>- Yaw Modifier</p>
+                    <p>- Inverter</p>
+                    <p>- Left Limit</p>
+                    <p>- Right Limit</p>
+                    <p>- Fake Options</p>
+                    <p>- LBY Mode</p>
+                    <p>- Freestanding Desync</p>
+                    <p>- Desync On Shot</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Fourth Column (Misc)  -->
+              <div class="swiper-slide">
+                <div class="about__fifth grid">
+                  <img src="images/fifth.png" alt="fourth" />
+
+                  <div class="rage__text">
+                    <h3>Visuals</h3>
+
+                    <p>- Indicator near crosshair</p>
+                    <p>- Keybind</p>
+                    <p>- Custom scope</p>
+                    <p>- Fullbright</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="about__sixth grid">
+                  <img src="images/sixth.png" alt="fourth" />
+
+                  <div class="rage__text">
+                    <h3>Log</h3>
+
+                    <p>- Target</p>
+                    <p>- Hitbox</p>
+                    <p>- damage</p>
+                    <p>- remaining hp</p>
+                    <p>- Hitchance</p>
+                    <p>- Backtrack</p>
+                    <p>- Scoped</p>
+                    <p>- Miss reason</p>
+                    <p>- Spread degree</p>
+                    <p>- Print in console with color</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="about__seven grid">
+                  <img src="images/seven.png" alt="fourth" />
+
+                  <div class="rage__text">
+                    <h3>Player List</h3>
+
+                    <p>- Steal name</p>
+                    <p>- Custom name</p>
+                    <p>- Steal clantag</p>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <!-- Fourth Column (Misc) -->
-            <div class="about__fourth swiper-slide">
-
+            <div class="swiper-button-next">
+              <i class="fas fa-angle-right swiper-portfolio-icon"></i>
             </div>
-          
+
+            <div class="swiper-button-prev">
+              <i class="fas fa-angle-left swiper-portfolio-icon"></i>
+            </div>
+
+            <div class="swiper-pagination"></div>
           </div>
+        </section>
 
-          <div class="swiper-button-next">
-            <i class = "fas fa-angle-right swiper-portfolio-icon"></i>
+        <!-- Screenshots -->
+
+        <!-- FAQs -->
+      </div>
+
+      <!-- ========== Onetap Part ============ -->
+      <div id="onetap" class="main__section">
+        <!-- Intro -->
+        <section id="intro">
+          <!-- Flex Two Columns For Big Devices -->
+          <div class="intro__container container grid">
+            <!-- First Column -->
+            <div class="intro__first grid">
+              <img
+                class="hide-for-desktop"
+                src="images/media2.jpg"
+                alt="media2"
+              />
+
+              <!-- Text -->
+              <h2>The Future Of Disaster JS</h2>
+              <p>
+                Founded in 2020, Disaster JS can definitely enchance of your
+                gaming experience. This Javascript is very different from others
+                and it have a lot of new features inside this Onetap Javascript.
+                Make sure to check it out , or else u will regret.
+              </p>
+            </div>
+
+            <!-- Second Column -->
+            <div class="intro__second hide-for-mobile">
+              <img src="images/media2.jpg" alt="media2" />
+            </div>
           </div>
-          
-          <div class="swiper-button-prev">
-              <i class = "fas fa-angle-left swiper-portfolio-icon"></i>
+        </section>
+
+        <!-- About -->
+        <section id="about">
+          <!-- Flex Four Columns For Big Devices -->
+          <div class="about__container container grid swiper-container">
+            <div class="swiper-wrapper">
+              <!-- First Column (Rage) -->
+              <div class="about__first grid swiper-slide"></div>
+
+              <!-- Second Column (Anti-aim) -->
+              <div class="about__second swiper-slide"></div>
+
+              <!-- Third Column (Visuals) -->
+              <div class="about__third swiper-slide"></div>
+
+              <!-- Fourth Column (Misc) -->
+              <div class="about__fourth swiper-slide"></div>
+            </div>
+
+            <div class="swiper-button-next">
+              <i class="fas fa-angle-right swiper-portfolio-icon"></i>
+            </div>
+
+            <div class="swiper-button-prev">
+              <i class="fas fa-angle-left swiper-portfolio-icon"></i>
+            </div>
+
+            <div class="swiper-pagination"></div>
           </div>
-  
-          <div class="swiper-pagination"></div>
+        </section>
 
-        </div>
-      </section>
+        <!-- Screenshots -->
 
-      <!-- Screenshots -->
+        <!-- FAQs -->
+      </div>
+    </main>
 
-      <!-- FAQs -->
-    </div>
+    <!--=============== SCROLL REVEAL ===============-->
+    <script src="js/scrollreveal.min.js"></script>
 
-  </main>
-  
-  <!--=============== SCROLL REVEAL ===============-->
-  <script src="js/scrollreveal.min.js"></script>
+    <!--=============== SWIPER JS ===============-->
+    <script src="js/swiper-bundle.min.js"></script>
 
-  <!--=============== SWIPER JS ===============-->
-  <script src="js/swiper-bundle.min.js"></script>
-
-  <!-- Main Script -->
-  <script src = "js/main.js"></script>
-
-
-</body>
+    <!-- Main Script -->
+    <script src="js/main.js"></script>
+  </body>
 </html>
