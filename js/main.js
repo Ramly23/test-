@@ -154,6 +154,13 @@ intro.addEventListener("click", () => {
   window.scrollTo(0, 650);
 });
 
+/* About */
+const about = document.querySelector(".about");
+
+about.addEventListener("click", () => {
+  window.scrollTo(0, 1450);
+});
+
 /*==================== SWIPER  ====================*/
 let swiperPortfolio = new Swiper(".about__container", {
   cssMode: true,

@@ -58,15 +58,17 @@
               </li>
 
               <li class="nav__item">
-                <a href="#about" class="nav__link">About</a>
+                <a href="#about" class="nav__link about">About</a>
               </li>
 
               <li class="nav__item">
-                <a href="#screenshots" class="nav__link">Screenshots</a>
+                <a href="#screenshots" class="nav__link screenshots"
+                  >Screenshots</a
+                >
               </li>
 
               <li class="nav__item">
-                <a href="#faqs" class="nav__link">FAQs</a>
+                <a href="#faqs" class="nav__link faqs">FAQs</a>
               </li>
 
               <div class="buttons hide-for-desktop">
@@ -150,7 +152,7 @@
 
         <!-- About -->
         <section id="about">
-          <!-- Flex Four Columns For Big Devices -->
+          <!-- Flex Two Columns For Big Devices -->
           <div class="about__container container grid swiper-container">
             <div class="about__title">
               <h1>About The Lua</h1>
@@ -163,14 +165,16 @@
                   <img class="rage" src="images/first.png" alt="images" />
 
                   <!-- Text -->
-                  <div class="rage__text">
+                  <div class="rage__text grid">
                     <h3>Rage (Neverlose)</h3>
 
-                    <p>- DT Mode (Normal, Fast, Disaster)</p>
-                    <p>- Clock Correction</p>
-                    <p>- Force Teleport</p>
-                    <p>- Ideal Tick</p>
-                    <p>- Jump Scout Fix</p>
+                    <div class="outer grid">
+                      <p>- DT Mode (Normal, Fast, Disaster)</p>
+                      <p>- Clock Correction</p>
+                      <p>- Force Teleport</p>
+                      <p>- Ideal Tick</p>
+                      <p>- Jump Scout Fix</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -180,19 +184,24 @@
                 <div class="about__second grid">
                   <img src="images/second.png" alt="second" />
 
-                  <div class="rage__text">
+                  <div class="rage__text grid">
                     <h3>Weapon Configuration (Neverlose)</h3>
 
-                    <p>- Hitboxes priority <br />(Set to different hitboxes)</p>
-                    <p>
-                      - Prefer head <br />
-                      ( In-air, Standing, Walking, Running, Crouching, Lethal,
-                      Shot)
-                    </p>
-                    <p>
-                      - Prefer body <br />
-                      ( In-air, Standing, Walking, Running, Crouching, Lethal )
-                    </p>
+                    <div class="outer grid">
+                      <p>
+                        - Hitboxes priority <br />(Set to different hitboxes)
+                      </p>
+                      <p>
+                        - Prefer head <br />
+                        ( In-air, Standing, Walking, Running, Crouching, Lethal,
+                        Shot)
+                      </p>
+                      <p>
+                        - Prefer body <br />
+                        ( In-air, Standing, Walking, Running, Crouching, Lethal
+                        )
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -202,100 +211,116 @@
                 <div class="about__third grid">
                   <img src="images/three.png" alt="three.png" />
 
-                  <div class="rage__text">
+                  <div class="rage__text grid">
                     <h3>Anti-Aim (Neverlose)</h3>
-                    <p>- AA Modes (4 Presets )</p>
-                    <p>
-                      - Custom ( Standing, Slowwalk, Walking, Running, In-air,
-                      Crouching, On-E)
-                    </p>
-                    <p>- Safe Head</p>
-                    <p>- Mega Lean</p>
-                    <p>- Pitch 0 on Land</p>
-                    <p>- Leg Fucker</p>
-                    <p>- AA Details ( Print details of anti aim in console )</p>
-                    <p>- Builder ( Override yaw, lby, limit )</p>
-                    <p>- Fakelag ( 1 Mode )</p>
+
+                    <div class="outer grid">
+                      <p>- AA Modes (4 Presets )</p>
+                      <p>
+                        - Custom ( Standing, Slowwalk, Walking, Running, In-air,
+                        Crouching, On-E)
+                      </p>
+                      <p>- Safe Head</p>
+                      <p>- Mega Lean</p>
+                      <p>- Pitch 0 on Land</p>
+                      <p>- Leg Fucker</p>
+                      <p>
+                        - AA Details ( Print details of anti aim in console )
+                      </p>
+                      <p>- Builder ( Override yaw, lby, limit )</p>
+                      <p>- Fakelag ( 1 Mode )</p>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <!-- Fourth Column (Misc)  -->
+              <!-- Fourth Column (Custom AA)  -->
               <div class="swiper-slide">
                 <div class="about__fourth grid">
                   <img src="images/fourth.png" alt="fourth" />
 
-                  <div class="rage__text">
-                    <h3>Custom AA</h3>
+                  <div class="rage__text grid">
+                    <h3>Custom AA (Neverlose)</h3>
 
-                    <p>- AA Condition</p>
-                    <p>- Pitch</p>
-                    <p>- Yaw Base</p>
-                    <p>- Yaw Add</p>
-                    <p>- Yaw Modifier</p>
-                    <p>- Inverter</p>
-                    <p>- Left Limit</p>
-                    <p>- Right Limit</p>
-                    <p>- Fake Options</p>
-                    <p>- LBY Mode</p>
-                    <p>- Freestanding Desync</p>
-                    <p>- Desync On Shot</p>
+                    <div class="outer grid">
+                      <p>- AA Condition</p>
+                      <p>- Pitch</p>
+                      <p>- Yaw Base</p>
+                      <p>- Yaw Add</p>
+                      <p>- Yaw Modifier</p>
+                      <p>- Inverter</p>
+                      <p>- Left Limit</p>
+                      <p>- Right Limit</p>
+                      <p>- Fake Options</p>
+                      <p>- LBY Mode</p>
+                      <p>- Freestanding Desync</p>
+                      <p>- Desync On Shot</p>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <!-- Fourth Column (Misc)  -->
+              <!-- Fifth Column (Visuals)  -->
               <div class="swiper-slide">
                 <div class="about__fifth grid">
                   <img src="images/fifth.png" alt="fourth" />
 
-                  <div class="rage__text">
+                  <div class="rage__text grid">
                     <h3>Visuals</h3>
 
-                    <p>- Indicator near crosshair</p>
-                    <p>- Keybind</p>
-                    <p>- Custom scope</p>
-                    <p>- Fullbright</p>
+                    <div class="outer grid">
+                      <p>- Indicator near crosshair</p>
+                      <p>- Keybind</p>
+                      <p>- Custom scope</p>
+                      <p>- Fullbright</p>
+                    </div>
                   </div>
                 </div>
               </div>
 
+              <!-- Sixth Column (Log)  -->
               <div class="swiper-slide">
                 <div class="about__sixth grid">
                   <img src="images/sixth.png" alt="fourth" />
 
-                  <div class="rage__text">
+                  <div class="rage__text grid">
                     <h3>Log</h3>
 
-                    <p>- Target</p>
-                    <p>- Hitbox</p>
-                    <p>- damage</p>
-                    <p>- remaining hp</p>
-                    <p>- Hitchance</p>
-                    <p>- Backtrack</p>
-                    <p>- Scoped</p>
-                    <p>- Miss reason</p>
-                    <p>- Spread degree</p>
-                    <p>- Print in console with color</p>
+                    <div class="outer grid">
+                      <p>- Target</p>
+                      <p>- Hitbox</p>
+                      <p>- Damage</p>
+                      <p>- Remaining hp</p>
+                      <p>- Hitchance</p>
+                      <p>- Backtrack</p>
+                      <p>- Scoped</p>
+                      <p>- Miss reason</p>
+                      <p>- Spread degree</p>
+                      <p>- Print in console with color</p>
+                    </div>
                   </div>
                 </div>
               </div>
 
+              <!-- Seventh Column (Player List) -->
               <div class="swiper-slide">
                 <div class="about__seven grid">
                   <img src="images/seven.png" alt="fourth" />
 
-                  <div class="rage__text">
+                  <div class="rage__text grid">
                     <h3>Player List</h3>
 
-                    <p>- Steal name</p>
-                    <p>- Custom name</p>
-                    <p>- Steal clantag</p>
+                    <div class="outer grid">
+                      <p>- Steal name</p>
+                      <p>- Custom name</p>
+                      <p>- Steal clantag</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
 
+            <!-- Add Arrow and Pagination For Swiper JS-->
             <div class="swiper-button-next">
               <i class="fas fa-angle-right swiper-portfolio-icon"></i>
             </div>
@@ -346,22 +371,142 @@
 
         <!-- About -->
         <section id="about">
-          <!-- Flex Four Columns For Big Devices -->
+          <!-- Flex Two Columns For Big Devices -->
           <div class="about__container container grid swiper-container">
-            <div class="swiper-wrapper">
-              <!-- First Column (Rage) -->
-              <div class="about__first grid swiper-slide"></div>
-
-              <!-- Second Column (Anti-aim) -->
-              <div class="about__second swiper-slide"></div>
-
-              <!-- Third Column (Visuals) -->
-              <div class="about__third swiper-slide"></div>
-
-              <!-- Fourth Column (Misc) -->
-              <div class="about__fourth swiper-slide"></div>
+            <!-- Title -->
+            <div class="about__title">
+              <h1>About The JS</h1>
             </div>
 
+            <div class="swiper-wrapper">
+              <!-- First Column (Rage) -->
+              <div class="swiper-slide">
+                <div class="about__first grid">
+                  <img src="images/rage.jpg" alt="Rage" />
+
+                  <div class="rage__text grid">
+                    <h3>Rage (Onetap)</h3>
+
+                    <div class="outer grid">
+                      <p>- Override Doubletap</p>
+                      <p>- 1 Tick In Disaster Mode</p>
+                      <p>- Four DT Modes (Disaster , Fast , Slow , Custom)</p>
+                      <p>- Fastest Recharge</p>
+                      <p>- Fakelag On Zeus</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="about__second grid">
+                  <img src="images/weapon.jpg" alt="Weapon" />
+
+                  <div class="rage__text grid">
+                    <h3>Weapon Configuration (Onetap)</h3>
+
+                    <div class="outer grid">
+                      <p>- Sync Menu With Every Weapon</p>
+                      <p>- Weapon Config (All Weapons Configs Is Editable)</p>
+                      <p>- Ignore Target Hitchance</p>
+                      <p>- Defensive Doubletap</p>
+                      <p>- Noscope Modifier (Distance And Hitchance)</p>
+                      <p>
+                        - Adaptive Hitchance (Min Hitchance , Max Hitchance ,
+                        Override Hitchance And In Air Hitchance)
+                      </p>
+                      <p>
+                        - Adaptive Auto Stop Modifiers (Standing And Moving)
+                      </p>
+                      <p>
+                        - Safepoint Hitgroup (Head , Chest , Stomach , Arms ,
+                        Legs)
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="about__third grid">
+                  <img src="images/AA.jpg" alt="AA" />
+
+                  <div class="rage__text grid">
+                    <h3>Anti-Aim (Onetap)</h3>
+
+                    <div class="outer grid">
+                      <p>
+                        - Anti-Aim Types (Real Jitter , Real Static , Real
+                        Switch , Fake Switch , FutureSight AA , Ideal Yaw ,
+                        Experiment 1 , Custom)
+                      </p>
+                      <p>- Custom (Set Ur Own Anti-Aim)</p>
+                      <p>- Advanced Fakelag (Experimental)</p>
+                      <p>- Choke On Shot</p>
+                      <p>- Advanced Freestanding (Hide And Peek)</p>
+                      <p>
+                        - Low Delta Types (Test 1 ,Test 2 ,Test 3 ,Test 4 ,Test
+                        5)
+                      </p>
+                      <p>
+                        - Auto Direction Disabler (Standing , Slow Walking , In
+                        Air , Legit AA)
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="about__fourth grid">
+                  <img src="images/Visuals.jpg" alt="visuals" />
+
+                  <div class="rage__text grid">
+                    <h3>Visuals (Onetap)</h3>
+
+                    <div class="outer grid">
+                      <p>- Render Flag</p>
+                      <p>- Esp Flag</p>
+                      <p>- Custom Chams</p>
+                      <p>- Watermark</p>
+                      <p>- Keybind</p>
+                      <p>- Spectator</p>
+                      <p>- Crosshair</p>
+                      <p>- Indicator</p>
+                      <p>- Thunderstrike On Hit</p>
+                      <p>- Holopanel (AA Debugger)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="about__fifth grid">
+                  <img src="images/misc.jpg" alt="misc" />
+
+                  <div class="rage__text grid">
+                    <h3>Misc (Onetap)</h3>
+
+                    <div class="outer grid">
+                      <p>- Logs (Doubletap Speed , Damage , Hurt)</p>
+                      <p>
+                        - Hitlogs On Chat (Doubletap Speed Log Color , Hit Log
+                        Color , Hurt Log Color)
+                      </p>
+                      <p>- Clantag</p>
+                      <p>- Aspect Ratio</p>
+                      <p>
+                        - Killsay (Promoting , FutureDisaster , FPS , Time ,
+                        Weapon)
+                      </p>
+                      <p>- Config Systems (Save All Your Disaster Settings)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Add Arrow and Pagination For Swiper JS-->
             <div class="swiper-button-next">
               <i class="fas fa-angle-right swiper-portfolio-icon"></i>
             </div>
