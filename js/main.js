@@ -162,7 +162,7 @@ about.addEventListener("click", () => {
 });
 
 /*==================== SWIPER  ====================*/
-let swiperPortfolio = new Swiper(".about__container", {
+let swiperAbout = new Swiper(".about__container", {
   cssMode: true,
   loop: true,
 
@@ -174,5 +174,21 @@ let swiperPortfolio = new Swiper(".about__container", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+    dynamicBullets: true,
+  },
+});
+
+let swiperScreen = new Swiper('.screen__container', {
+  cssMode: true,
+  loop: true,
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
   },
 });
