@@ -441,10 +441,10 @@ header {
 
 .screen__title {
   margin-bottom: 1rem;
-  row-gap: .75rem;
+  row-gap: 0.75rem;
 }
 
-.screen__title h3{
+.screen__title h3 {
   font-size: 28px;
   font-family: var(--Josefin);
   text-transform: uppercase;
@@ -457,10 +457,93 @@ header {
   font-family: var(--Poppins);
   font-size: 13px;
   text-align: center;
-  padding: 0 .75rem;
+  padding: 0 0.75rem;
 }
 
 /* FAQs */
+.questions__container {
+  padding: 5rem 2rem;
+}
+
+.questions__container h2 {
+  color: var(--title-color);
+  font-family: var(--Josefin);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.questions__group {
+  display: grid;
+  row-gap: 1.5rem;
+}
+
+.questions__item {
+  background-color: var(--first-color-dark);
+  border-radius: 0.25rem;
+}
+
+.questions__item-title {
+  font-size: 13px;
+  font-weight: var(--font-medium);
+  font-family: var(--Lexend);
+  color: #fff;
+  line-height: 1.5;
+}
+
+.questions__icon {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.questions__header {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  padding: 0.75rem 0.5rem;
+  cursor: pointer;
+}
+
+.questions__content {
+  overflow: hidden;
+  height: 0;
+}
+
+.questions__description {
+  padding: 0rem 2rem 0.75rem;
+  font-size: 12px;
+  font-family: var(--Poppins);
+}
+
+.questions__item,
+.questions__header,
+.questions__item-title,
+.questions__icon,
+.questions__description,
+.questions__content {
+  transition: 0.3s;
+}
+
+.questions__item:hover {
+  box-shadow: 0 2px 8px hsla(var(--hue), 4%, 15%, 0.15);
+}
+
+/*Rotate icon, change color of titles and background*/
+.accordion-open .questions__header,
+.accordion-open .questions__content {
+  background-color: var(--first-color);
+}
+
+.accordion-open .questions__item-title,
+.accordion-open .questions__description,
+.accordion-open .questions__icon {
+  color: #fff;
+}
+
+.accordion-open .questions__icon {
+  transform: rotate(45deg);
+}
 
 /* Footer */
 
@@ -665,7 +748,7 @@ header {
   }
 
   /* Screenshots */
-  .media__first img{
+  .media__first img {
     width: 80%;
     justify-self: center;
   }
@@ -678,6 +761,10 @@ header {
     font-size: 14px;
   }
   /* FAQs */
+  .questions__group {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
+  }
 
   /* Footer */
 }
@@ -721,7 +808,9 @@ header {
   /* Screenshots */
 
   /* FAQs */
-
+  .questions__group {
+    padding: 0 4rem;
+  }
   /* Footer */
 }
 
@@ -786,6 +875,8 @@ header {
   /* Screenshots */
 
   /* FAQs */
-
+  .questions__group {
+    padding: 0 15rem;
+  }
   /* Footer */
 }

@@ -161,6 +161,16 @@ about.addEventListener("click", () => {
   window.scrollTo(0, 1450);
 });
 
+/* Screenshots */
+document.querySelector(".screenshots").addEventListener("click", () => {
+  window.scrollTo(0 , 1700);
+})
+
+/* Faqs */
+document.querySelector(".faqs").addEventListener("click", () => {
+  window.scrollTo(0 , 2000);
+})
+
 /*==================== SWIPER  ====================*/
 let swiperAbout = new Swiper(".about__container", {
   cssMode: true,
@@ -192,3 +202,34 @@ let swiperScreen = new Swiper('.screen__container', {
     dynamicBullets: true,
   },
 });
+
+/*=============== QUESTIONS ACCORDION ===============*/
+const accordionItems = document.querySelectorAll('.questions__item')
+
+accordionItems.forEach((item) => {
+    const accordionHeader = item.querySelector('.questions__header')
+
+    accordionHeader.addEventListener('click', () => {
+        const openItem = document.querySelector('.accordion-open')
+
+        toggleItem(item)
+
+        if(openItem && openItem !== item){
+            toggleItem(openItem)
+        }
+    })
+})
+
+const toggleItem = (item) =>{
+    const accordionContent = item.querySelector('.questions__content')
+
+    if(item.classList.contains('accordion-open')) {
+        accordionContent.removeAttribute('style')
+        item.classList.remove('accordion-open')
+    }
+    
+    else {
+        accordionContent.style.height = accordionContent.scrollHeight + 'px'
+        item.classList.add('accordion-open')
+    }
+}
