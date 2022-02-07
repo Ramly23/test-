@@ -32,101 +32,83 @@
   <body>
     <!-- Header -->
     <!-- Finished -->
-    <header id="header">
-      <nav id="home" class="header">
-        <!-- Flex Two Columns -->
-        <div class="header__container container nav-flex">
-          <!-- First Column -->
-          <div class="nav__logo">
-            <h1>Disaster <i class="fas fa-user-secret"></i></h1>
-          </div>
+    <!-- Neverlose Part -->
+    <div id="neverlose" class="main__section is-active">
+      <header id="header">
+        <nav id="home" class="header">
+          <!-- Flex Two Columns -->
+          <div class="header__container container nav-flex">
+            <!-- First Column -->
+            <div class="nav__logo">
+              <h1>Disaster <i class="fas fa-user-secret"></i></h1>
+            </div>
 
-          <!-- Navigation Menu -->
-          <div class="nav__menu" id="nav-menu">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a
-                  href="#home"
-                  class="nav__link active-link home"
-                  id="remove__active"
-                  >Home</a
-                >
-              </li>
+            <!-- Navigation Menu -->
+            <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a
+                    href="#home"
+                    class="nav__link active-link home"
+                    id="remove__active"
+                    >Home</a
+                  >
+                </li>
 
-              <li class="nav__item">
-                <a href="#intro" class="nav__link intro">Intro</a>
-              </li>
+                <li class="nav__item">
+                  <a href="#intro" class="nav__link intro">Intro</a>
+                </li>
 
-              <li class="nav__item">
-                <a href="#about" class="nav__link about">About</a>
-              </li>
+                <li class="nav__item">
+                  <a href="#about" class="nav__link about">About</a>
+                </li>
 
-              <li class="nav__item">
-                <a href="#screenshots" class="nav__link screenshots"
-                  >Screenshots</a
-                >
-              </li>
+                <li class="nav__item">
+                  <a href="#screenshots" class="nav__link screenshots"
+                    >Screenshots</a
+                  >
+                </li>
 
-              <li class="nav__item">
-                <a href="#faqs" class="nav__link faqs">FAQs</a>
-              </li>
+                <li class="nav__item">
+                  <a href="#faqs" class="nav__link faqs">FAQs</a>
+                </li>
 
-              <li class="nav__item">
-                <a href="#buy" class="nav__link buy">Buy</a>
-              </li>
+                <li class="nav__item">
+                  <a href="#buy" class="nav__link buy">Buy</a>
+                </li>
 
-              <div class="buttons hide-for-desktop">
-                <button data-section="#neverlose" class="is-active">
-                  Neverlose
-                </button>
-                <button data-section="#onetap">Onetap</button>
+                <div class="buttons hide-for-desktop">
+                  <button data-section="#neverlose" class="is-active">
+                    Neverlose
+                  </button>
+                  <button data-section="#onetap">Onetap</button>
+                </div>
+              </ul>
+
+              <!-- Close Menu Icon -->
+              <div class="nav__close" id="nav-close">
+                <i class="ri-close-line"></i>
               </div>
-            </ul>
+            </div>
 
-            <!-- Close Menu Icon -->
-            <div class="nav__close" id="nav-close">
-              <i class="ri-close-line"></i>
+            <!-- Theme change button -->
+            <div class="nav__btns">
+              <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+              <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+              </div>
             </div>
           </div>
+        </nav>
+      </header>
 
-          <!-- Theme change button -->
-          <div class="nav__btns">
-            <i class="ri-moon-line change-theme" id="theme-button"></i>
-
-            <div class="nav__toggle" id="nav-toggle">
-              <i class="ri-menu-line"></i>
-            </div>
-          </div>
-        </div>
-      </nav>
-
-      <!-- Title -->
-      <div class="container flex-title">
-        <div class="title">
-          <h1>Welcome To The Future Disaster</h1>
-          <p class="hide-for-mobile">
-            Unique JS and Luas providing huge functionality and easy to use,
-            with a fast and friendly support team.
-          </p>
-
-          <div class="buttons buttons-flex hide-for-mobile">
-            <button data-section="#neverlose" class="is-active">
-              Neverlose
-            </button>
-            <button data-section="#onetap">Onetap</button>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <!-- Main Content -->
-    <main class="main">
-      <!-- ========== Neverlose Part ============ -->
-      <div id="neverlose" class="main__section is-active">
+      <!-- Main Content -->
+      <main class="main">
         <!-- Intro -->
         <section id="intro">
           <!-- Flex Two Columns For Big Devices -->
-          <div class="intro__container container grid" id = 'intro__onetap'>
+          <div class="intro__container container grid" id="intro__onetap">
             <!-- First Column -->
             <div class="intro__first">
               <img
@@ -338,7 +320,10 @@
         </section>
 
         <!-- Screenshots -->
-        <section class="screen__container container grid swiper-container" id = 'screenshots'>
+        <section
+          class="screen__container container grid swiper-container"
+          id="screenshots"
+        >
           <div class="screen__title grid">
             <h3>Screenshots</h3>
             <p>These are the screenshots from all the Disaster users</p>
@@ -470,16 +455,92 @@
               <h3>Buy Information</h3>
               <p>- 2.00 NLE</p>
               <p>- Script source: Closed</p>
-              <a href="https://en.neverlose.cc/market/item?id=AVPZHe" target = "_blank">Buy Now</a>
+              <a
+                href="https://en.neverlose.cc/market/item?id=AVPZHe"
+                target="_blank"
+                >Buy Now</a
+              >
             </div>
           </div>
         </section>
-      </div>
+      </main>
+    </div>
 
-      <!-- ========== Onetap Part ============ -->
-      <div id="onetap" class="main__section">
+    <!-- ========== Onetap Part ============ -->
+    <div id="onetap" class="main__section">
+      <header id="header">
+        <nav id="home__onetap" class="header">
+          <!-- Flex Two Columns -->
+          <div class="header__container container nav-flex">
+            <!-- First Column -->
+            <div class="nav__logo">
+              <h1>Disaster <i class="fas fa-user-secret"></i></h1>
+            </div>
+
+            <!-- Navigation Menu -->
+            <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a
+                    href="#home__onetap"
+                    class="nav__link active-link home home__onetap"
+                    id="remove__active"
+                    >Home</a
+                  >
+                </li>
+
+                <li class="nav__item">
+                  <a href="#intro_onetap" class="nav__link intro__onetap">Intro</a>
+                </li>
+
+                <li class="nav__item">
+                  <a href="#about__onetap" class="nav__link about__onetap">About</a>
+                </li>
+
+                <li class="nav__item">
+                  <a href="#screenshots__onetap" class="nav__link screenshots__onetap"
+                    >Screenshots</a
+                  >
+                </li>
+
+                <li class="nav__item">
+                  <a href="#faqs__onetap" class="nav__link faqs__onetap">FAQs</a>
+                </li>
+
+                <li class="nav__item">
+                  <a href="#buy__onetap" class="nav__link buy__onetap">Buy</a>
+                </li>
+
+                <div class="buttons hide-for-desktop">
+                  <button data-section="#neverlose" class="is-active">
+                    Neverlose
+                  </button>
+                  <button data-section="#onetap">Onetap</button>
+                </div>
+              </ul>
+
+              <!-- Close Menu Icon -->
+              <div class="nav__close" id="nav-close">
+                <i class="ri-close-line"></i>
+              </div>
+            </div>
+
+            <!-- Theme change button -->
+            <div class="nav__btns">
+              <i class="ri-moon-line change-theme" id="theme-button-onetap"></i>
+
+              <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Main Content -->
+      <main class="main">
         <!-- Intro -->
-        <section id="intro">
+        <section id="intro_onetap">
           <!-- Flex Two Columns For Big Devices -->
           <div class="intro__container container grid">
             <!-- First Column -->
@@ -508,7 +569,7 @@
         </section>
 
         <!-- About -->
-        <section id="about">
+        <section id="about__onetap">
           <!-- Flex Two Columns For Big Devices -->
           <div class="about__container container grid swiper-container">
             <!-- Title -->
@@ -662,7 +723,7 @@
         </section>
 
         <!-- Screenshots -->
-        <section class="screen__container container grid swiper-container">
+        <section class="screen__container container grid swiper-container" id = "screenshots__onetap">
           <div class="screen__title grid">
             <h3>Screenshots</h3>
             <p>These are the screenshots from all the Disaster users</p>
@@ -704,7 +765,7 @@
         </section>
 
         <!-- FAQs -->
-        <section id="faqs">
+        <section id="faqs__onetap">
           <div class="questions__container container grid">
             <!-- Section Title -->
             <h2>Some Common questions were often asked</h2>
@@ -782,14 +843,28 @@
             </div>
           </div>
         </section>
+      </main>
+    </div>
+
+    <!-- Title -->
+    <div class="container flex-title">
+      <div class="title">
+        <h1>Welcome To The Future Disaster</h1>
+        <p class="hide-for-mobile">
+          Unique JS and Luas providing huge functionality and easy to use, with
+          a fast and friendly support team.
+        </p>
+
+        <div class="buttons buttons-flex hide-for-mobile">
+          <button data-section="#neverlose" class="is-active">Neverlose</button>
+          <button data-section="#onetap">Onetap</button>
+        </div>
       </div>
-    </main>
+    </div>
 
     <!-- Footer -->
     <footer>
-      <div class="footer__container container grid">
-
-      </div>
+      <div class="footer__container container grid"></div>
     </footer>
 
     <!--=============== SCROLL REVEAL ===============-->

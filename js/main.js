@@ -31,6 +31,7 @@ navLink.forEach((n) => n.addEventListener("click", linkAction));
 
 /*=============== DARK LIGHT THEME ===============*/
 const themeButton = document.getElementById("theme-button");
+const themeButtonOnetap = document.getElementById("theme-button-onetap");
 const darkTheme = "dark-theme";
 const iconTheme = "ri-sun-line";
 
@@ -65,17 +66,30 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
 
+themeButtonOnetap.addEventListener("click", () => {
+  // Add or remove the dark / icon theme
+  document.body.classList.toggle(darkTheme);
+  themeButton.classList.toggle(iconTheme);
+  // We save the theme and the current icon that the user chose
+  localStorage.setItem("selected-theme", getCurrentTheme());
+  localStorage.setItem("selected-icon", getCurrentIcon());
+})
+
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 function scrollHeader() {
-  const header = document.querySelector(".header");
+  const header = document.querySelectorAll(".header");
   const removeLink = document.getElementById("remove__active");
 
   // When the scroll is greater than 80 viewport height, add the scroll-header class to the header tag
   if (this.scrollY >= 80) {
-    header.classList.add("scroll-header");
+    header.forEach((e) => {
+      e.classList.add("scroll-header");
+    });
     removeLink.classList.remove("active-link");
   } else {
-    header.classList.remove("scroll-header");
+    header.forEach((e) => {
+      e.classList.remove("scroll-header");
+    });
     removeLink.classList.add("active-link");
   }
 }
@@ -111,25 +125,37 @@ const sr = ScrollReveal({
   delay: 400,
 });
 
-sr.reveal(`.nav__logo , .text , .rage`, { origin: "left" });
-sr.reveal(`.nav__menu`, { interval: 100 });
-sr.reveal(`.nav__btns`, { origin: "right" });
+sr.reveal(`.text , .rage`, { origin: "left" });
 sr.reveal(`.media`, { origin: "right" });
 
 /* =========== Multiple Scroll =========== */
 
 /* Home */
-document.querySelector(".home").addEventListener("click", () => {
+const home = document.querySelector(".home");
+const home__onetap = document.querySelector(".home__onetap")
+
+home.addEventListener("click", () => {
   document.documentElement.scrollTop = 0;
-  intro.classList.remove("active-link");
+  intro.classList.remove("active-link")
   about.classList.remove("active-link");
   screenshots.classList.remove("active-link");
   buy.classList.remove("active-link");
   faqs.classList.remove("active-link");
 });
 
+home__onetap.addEventListener("click", () => {
+  document.documentElement.scrollTop = 0;
+  intro__onetap.classList.remove("active-link")
+  about__onetap.classList.remove("active-link");
+  screenshots__onetap.classList.remove("active-link");
+  buy__onetap.classList.remove("active-link");
+  faqs__onetap.classList.remove("active-link");
+  home__onetap.classList.add("active-link")
+})
+
 /* Intro  */
 const intro = document.querySelector(".intro");
+const intro__onetap = document.querySelector(".intro__onetap");
 
 intro.addEventListener("click", () => {
   intro.scrollIntoView();
@@ -140,8 +166,19 @@ intro.addEventListener("click", () => {
   faqs.classList.remove("active-link");
 });
 
+intro__onetap.addEventListener("click", () => {
+  intro__onetap.scrollIntoView();
+  intro__onetap.classList.add("active-link");
+  about__onetap.classList.remove("active-link");
+  screenshots__onetap.classList.remove("active-link");
+  buy__onetap.classList.remove("active-link");
+  faqs__onetap.classList.remove("active-link");
+  home__onetap.classList.remove("active-link");
+});
+
 /* About */
 const about = document.querySelector(".about");
+const about__onetap = document.querySelector(".about__onetap");
 
 about.addEventListener("click", () => {
   about.scrollIntoView();
@@ -152,8 +189,20 @@ about.addEventListener("click", () => {
   faqs.classList.remove("active-link");
 });
 
+about__onetap.addEventListener("click", () => {
+  about__onetap.scrollIntoView();
+  about__onetap.classList.add("active-link");
+  intro__onetap.classList.remove("active-link");
+  screenshots__onetap.classList.remove("active-link");
+  buy__onetap.classList.remove("active-link");
+  faqs__onetap.classList.remove("active-link");
+  home__onetap.classList.remove("active-link");
+});
+
+
 /* Screenshots */
 const screenshots = document.querySelector(".screenshots");
+const screenshots__onetap = document.querySelector(".screenshots__onetap");
 
 screenshots.addEventListener("click", () => {
   screenshots.scrollIntoView();
@@ -164,8 +213,19 @@ screenshots.addEventListener("click", () => {
   faqs.classList.remove("active-link");
 });
 
+screenshots__onetap.addEventListener("click", () => {
+  screenshots__onetap.scrollIntoView();
+  screenshots__onetap.classList.add("active-link");
+  about__onetap.classList.remove("active-link");
+  buy__onetap.classList.remove("active-link");
+  intro__onetap.classList.remove("active-link");
+  faqs__onetap.classList.remove("active-link");
+  home__onetap.classList.remove("active-link");
+});
+
 /* Faqs */
 const faqs = document.querySelector(".faqs");
+const faqs__onetap = document.querySelector(".faqs__onetap");
 
 faqs.addEventListener("click", () => {
   faqs.scrollIntoView();
@@ -176,8 +236,19 @@ faqs.addEventListener("click", () => {
   screenshots.classList.remove("active-link");
 });
 
+faqs__onetap.addEventListener("click", () => {
+  faqs__onetap.scrollIntoView();
+  faqs__onetap.classList.add("active-link");
+  about__onetap.classList.remove("active-link");
+  buy__onetap.classList.remove("active-link");
+  intro__onetap.classList.remove("active-link");
+  screenshots__onetap.classList.remove("active-link");
+  home__onetap.classList.remove("active-link");
+});
+
 /* Buy */
 const buy = document.querySelector(".buy");
+const buy__onetap = document.querySelector(".buy__onetap");
 
 buy.addEventListener("click", () => {
   buy.scrollIntoView();
@@ -188,7 +259,15 @@ buy.addEventListener("click", () => {
   faqs.classList.remove("active-link");
 });
 
-
+buy__onetap.addEventListener("click", () => {
+  buy__onetap.scrollIntoView();
+  buy__onetap.classList.add("active-link");
+  about__onetap.classList.remove("active-link");
+  intro__onetap.classList.remove("active-link");
+  screenshots__onetap.classList.remove("active-link");
+  faqs__onetap.classList.remove("active-link");
+  home__onetap.classList.remove("active-link");
+});
 
 /*==================== SWIPER  ====================*/
 let swiperAbout = new Swiper(".about__container", {
