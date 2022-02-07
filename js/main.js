@@ -19,6 +19,22 @@ if (navClose) {
   });
 }
 
+const nav_Menu = document.getElementById("nav-menu-onetap"),
+  nav_Toggle = document.getElementById("nav-toggle-onetap"),
+  nav_Close = document.getElementById("nav-close-onetap");
+
+if (nav_Toggle) {
+  nav_Toggle.addEventListener("click", () => {
+    nav_Menu.classList.add("show-menu");
+  });
+}
+
+if (nav_Close) {
+  nav_Close.addEventListener("click", () => {
+    nav_Menu.classList.remove("show-menu");
+  });
+}
+
 /*=============== REMOVE MENU MOBILE ===============*/
 const navLink = document.querySelectorAll(".nav__link");
 
@@ -73,7 +89,7 @@ themeButtonOnetap.addEventListener("click", () => {
   // We save the theme and the current icon that the user chose
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
-})
+});
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 function scrollHeader() {
@@ -132,11 +148,11 @@ sr.reveal(`.media`, { origin: "right" });
 
 /* Home */
 const home = document.querySelector(".home");
-const home__onetap = document.querySelector(".home__onetap")
+const home__onetap = document.querySelector(".home__onetap");
 
 home.addEventListener("click", () => {
   document.documentElement.scrollTop = 0;
-  intro.classList.remove("active-link")
+  intro.classList.remove("active-link");
   about.classList.remove("active-link");
   screenshots.classList.remove("active-link");
   buy.classList.remove("active-link");
@@ -145,13 +161,13 @@ home.addEventListener("click", () => {
 
 home__onetap.addEventListener("click", () => {
   document.documentElement.scrollTop = 0;
-  intro__onetap.classList.remove("active-link")
+  intro__onetap.classList.remove("active-link");
   about__onetap.classList.remove("active-link");
   screenshots__onetap.classList.remove("active-link");
   buy__onetap.classList.remove("active-link");
   faqs__onetap.classList.remove("active-link");
-  home__onetap.classList.add("active-link")
-})
+  home__onetap.classList.add("active-link");
+});
 
 /* Intro  */
 const intro = document.querySelector(".intro");
@@ -198,7 +214,6 @@ about__onetap.addEventListener("click", () => {
   faqs__onetap.classList.remove("active-link");
   home__onetap.classList.remove("active-link");
 });
-
 
 /* Screenshots */
 const screenshots = document.querySelector(".screenshots");

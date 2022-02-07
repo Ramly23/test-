@@ -14,7 +14,7 @@
   --text-color-light: hsl(var(--hue), 4%, 55%);
   --body-color: hsl(var(--hue), 0%, 100%);
   --container-color: #fff;
-  --link-color: #FFF;
+  --link-color: #fff;
 
   /* ======= Except This Color ======= */
   --first-color-dark: hsl(var(--hue), 8%, 20%);
@@ -44,7 +44,7 @@ body.dark-theme {
   --text-color: hsl(var(--hue), 4%, 75%);
   --body-color: hsl(var(--hue), 8%, 16%);
   --container-color: hsl(var(--hue), 8%, 16%);
-  --link-color:  hsl(var(--hue), 4%, 15%);
+  --link-color: hsl(var(--hue), 4%, 15%);
 }
 
 /* Base */
@@ -569,12 +569,12 @@ header {
 
 .buy__content {
   margin-top: 1.5rem;
-  row-gap: .75rem;
+  row-gap: 0.75rem;
   background-color: var(--first-color-dark);
   padding: 2rem;
   border: 2px solid var(--title-color);
   box-shadow: 0 0 15px 0 var(--title-color);
-  border-radius: .25rem;
+  border-radius: 0.25rem;
 }
 
 .buy__content h3 {
@@ -595,8 +595,8 @@ header {
   background-color: var(--title-color);
   color: var(--link-color);
   text-align: center;
-  padding: .75rem;
-  border-radius: .25rem;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
   transition: 200ms ease-in-out;
 }
 
